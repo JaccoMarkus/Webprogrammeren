@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>puzzel 5 week 2</title>
+</head>
+  <SCRIPT TYPE="text/javascript">
+  var euro = "1";
+  var dollar = "1.08";
+  var peso = "18.06";
+  var yen = "132.07";
+  var pond = "0.71";
+
+function login1(){
+    var euro = document.getElementById("euro").value;
+if (euro > 0){
+  document.getElementById("message").innerHTML = euro + " euro" + " is omgerekend " + euro* dollar + " dollar";
+              }
+                  } 
+
+function login2(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * peso + " peso's";
+                }
+              }
+function login3(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * yen + " Yen";
+                }
+              }
+function login4(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * pond + " pond";
+                }
+              }
+
+
+
+
+    </SCRIPT>
+    <body>
+    <input type="text" id="euro" value="" placeholder="euro"/><br/>
+    <button onclick="login1()">Omrekenen in dollar</button><br/>
+    <button onclick="login2()">Omrekenen in peso</button><br/>
+    <button onclick="login3()">Omrekenen in yen</button><br/>
+    <button onclick="login4()">Omrekenen in pond</button><br/>
+
+<p id="message"></p>
+  </body>
+</html>
