@@ -1,0 +1,109 @@
+-puzzel 1-
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 1</title>
+</head>
+<body>
+
+<script>
+var uitspraken = ["'Ieder nadeel heb zijn voordeel.'<br>","'Als wij de bal hebben kunnen zij niet scoren.'<br>", "'Voordat ik een fout maak, maak ik die fout niet'<br>","'Je gaat het pas zien als je het door hebt.'<br>","'Als Italianen één kans krijgen, maken ze er twee.'<br>", "'Vaak moet er iets gebeuren voordat er iets gebeurt.'<br>"];
+document.write('<strong>Hier demonstreer ik de <em>for-loop</em></strong><br>');
+// schrijf hier jouw oplossing
+document.write('<strong>Hier demonstreer ik de <em>while-loop</em></strong><br>');
+// schrijf hier jouw oplossing
+document.write('<strong>Hier is de random quote van de dag</strong><br>');
+// schrijf hier jouw oplossing
+</script>
+
+</body>
+</html>
+-puzzel 2-
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 2</title>
+</head>
+<body>
+
+<script>
+var spaans = ['uno','dos','tres','cuatro','cinco', 'seis', 'siete','ocho', 'nueve', 'diez']; 
+	
+</script>
+
+</body>
+</html>
+-puzzel 3-
+<!doctype html>
+<html>
+ <head>
+	<title>week 03-04 - puzzel 03</title>
+	<h1>Controleer je lotnummer</h1>
+	<script TYPE="text/javascript">
+
+		function vergelijk()
+	{
+		var lotnummer = document.getElementById('lotnummer').value;
+
+		if (lotnummer == 123456){
+			document.getElementById("message").innerHTML = "Hoera, je hebt een prijs gewonnen!";
+		}
+		else if (lotnummer == 654321){
+			document.getElementById("message").innerHTML = "Hoera, je hebt een prijs gewonnen!";
+		}
+		else {
+	        document.getElementById("message").innerHTML = "Jammer, deze keer heb je niets gewonnen.";
+			}
+	};
+	</script>
+</head>
+<body>
+	<input type="text" id="lotnummer" value="Typ hier uw lotnummer"/><br/>
+	<button onclick="vergelijk()">controleer</button>
+	<p id="message"></p>
+</body>
+</html>	
+-puzzel 4-
+<!doctype html>
+<html>
+ <head>
+	<title>week 03-04 - puzzel 04</title>
+	<h1> Bereken gemiddelde </h1>
+	<script TYPE="text/javascript">
+
+		function gemiddelde()
+			{
+			
+			// zorgt voor de input
+				var cijfer1 = document.getElementById('cijfer1').value;;
+				var cijfer2 = document.getElementById('cijfer2').value;
+				var cijfer3 = document.getElementById('cijfer3').value;
+				var cijfer4 = document.getElementById('cijfer4').value;
+				var cijfer5 = document.getElementById('cijfer5').value;
+				var cijfer6 = document.getElementById('cijfer6').value;
+
+				// berekening 
+				var berekening = cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5 + cijfer6
+
+				if(berekening > 6) { 
+					alert("Goed gedaan!");
+				};
+				else {
+					alert("Jammer, net onvoldoende");
+				}
+			}
+		
+	</script>
+</head>
+<body>
+	<input type="text" id="cijfer1" value="8"/><br/>
+	<input type="text" id="cijfer2" value="6"/><br/>
+	<input type="text" id="cijfer3" value="7"/><br/>
+	<input type="text" id="cijfer4" value="6"/><br/>
+	<input type="text" id="cijfer5" value="6"/><br/>
+	<input type="text" id="cijfer6" value="7.5"/><br/>
+	<button onclick="gemiddelde()">Bereken gemiddelde</button>
+</body>
+</html>	
