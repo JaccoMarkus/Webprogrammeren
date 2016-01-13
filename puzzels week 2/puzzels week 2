@@ -1,0 +1,147 @@
+-puzzels week 2-
+-puzzel 1-
+<html>
+ <head>
+<title>week 02 - puzzel 1</title>
+<SCRIPT TYPE="text/javascript">
+function knop() {
+var woord1 = prompt("Wat is woord 1?");
+var woord2 = prompt("Wat is woord 2?");
+
+if(woord1 > woord2) {
+	alert(woord1 + " is langer dan " + woord2 + " en bestaat uit " + woord1.length + " letters");
+} else {
+	alert(woord2 + " is langer dan " + woord1 + " en bestaat uit " + woord2.length + " letters");
+}
+}
+</SCRIPT>
+</head>
+<body>
+<button onclick="knop()">Vergelijk woorden</button>
+</body>
+</html>
+-puzzel 2-
+<!doctype html>
+<html>
+	<head>
+		<title>vitesse arnhem 1</title>
+		<SCRIPT TYPE="text/javascript">
+// je hebt overgewicht bij  0,6kg per centimeter
+function knop() {
+var berekenBM = waarde1 / waarde2;
+var waarde1 = prompt("Wat is uw gewicht?");
+var waarde2 = prompt("Wat is uw lengte in centimers?");
+if (waarde2 < waarde1) {
+	alert("Je hebt overgewicht!");
+}	else {
+	alert("Je hebt geen overgewicht!");
+}
+}
+		</SCRIPT>
+	</head>
+	<body>
+	</body>
+<button onclick= "knop()">Bereken</button>
+</html>
+-puzzel 3-
+<!doctype html>
+<html>
+	<head>
+		<title>vitesse arnhem 1</title>
+		<SCRIPT TYPE="text/javascript">
+	var waarde1 = prompt("Wat is wachtwoord 1?");
+	var waarde2 = prompt("Wat is wachtwoord 2?");
+	if (waarde1 == waarde2) {
+		alert("de wachtwoorden zijn gelijk!");
+	} else {
+		alert("de wachtwoorden zijn niet gelijk");
+	}
+
+		</SCRIPT>
+	</head>
+	<body>
+	</body>
+</html>
+puzzel 4-
+<!doctype html>
+<html>
+ <head>
+	<title>week 02 - puzzel 04</title>
+	<script TYPE="text/javascript">
+
+		function vergelijk(){
+		var woord1 = document.getElementById('woord1').value;
+		var woord2 = document.getElementById('woord2').value;
+
+		//berekening lengte woord
+		var lengtewoord1 = woord1.length;
+		var lengtewoord2 = woord2.length;
+		
+		// vergelijk welk woord langer is..
+		if(lengtewoord1 === lengtewoord2){
+			document.getElementById("message").innerHTML = "woorden zijn even lang!";
+		}
+		if (lengtewoord1 > lengtewoord2){
+			document.getElementById("message").innerHTML = "woord 1 is langer";
+		}
+		if (lengtewoord1 < lengtewoord2){
+			document.getElementById("message").innerHTML = "woord 2 is langer";
+		}
+	}
+	</script>
+</head>
+<body>
+-puzzel 5-
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>puzzel 5 week 2</title>
+</head>
+  <SCRIPT TYPE="text/javascript">
+  var euro = "1";
+  var dollar = "1.08";
+  var peso = "18.06";
+  var yen = "132.07";
+  var pond = "0.71";
+
+function login1(){
+    var euro = document.getElementById("euro").value;
+if (euro > 0){
+  document.getElementById("message").innerHTML = euro + " euro" + " is omgerekend " + euro* dollar + " dollar";
+              }
+                  } 
+
+function login2(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * peso + " peso's";
+                }
+              }
+function login3(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * yen + " Yen";
+                }
+              }
+function login4(){
+  var euro = document.getElementById("euro").value;
+if (euro > 0){
+    document.getElementById("message").innerHTML = euro + " euro " + "is omgerekend " + euro * pond + " pond";
+                }
+              }
+
+
+
+
+    </SCRIPT>
+    <body>
+    <input type="text" id="euro" value="" placeholder="euro"/><br/>
+    <button onclick="login1()">Omrekenen in dollar</button><br/>
+    <button onclick="login2()">Omrekenen in peso</button><br/>
+    <button onclick="login3()">Omrekenen in yen</button><br/>
+    <button onclick="login4()">Omrekenen in pond</button><br/>
+
+<p id="message"></p>
+  </body>
+</html>
